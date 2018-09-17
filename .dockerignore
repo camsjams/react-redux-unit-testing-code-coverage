@@ -1,0 +1,16 @@
+.git
+.circleci
+.nyc_output
+public/assets
+coverage
+docs
+infrastructure
+node_modules
+scripts
+static/js
+static/media
+.gitignore
+.editorconfig
+*.log
+*.md
+.cache

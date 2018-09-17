@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: /var/www
+    docker:
+      - image: node:8.11.3-alpine
+        environment:
+          NODE_ENV: test
+    environment:
+      TZ: "/usr/share/zoneinfo/Etc/UTC"
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run lint
+      - run: npm run coverage
+      - run: npm run snyk

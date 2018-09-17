@@ -1,0 +1,11 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "extends": "stylelint-config-standard",
+  "syntax": "scss",
+  "rules": {
+    "indentation": "tab",
+    "max-nesting-depth": 3
+  }
+}
